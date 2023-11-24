@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?attr/materialCardViewOutlinedStyle"
+    android:layout_width="350dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="#333030"
+    app:cardElevation="8dp"
+    app:strokeColor="#717070">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activityTaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Enter Cat 2 marks"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activityStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activityTaskName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:text="Overdue"
+            android:textColor="#C1BEBE"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:icon="@drawable/ic_more" />
+
+</com.google.android.material.card.MaterialCardView>

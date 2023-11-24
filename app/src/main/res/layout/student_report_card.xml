@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/unitReportName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Unit: Compiler construction"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/unitGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unitReportName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:text="Grade: A"
+        android:textColor="#C1BEBE"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

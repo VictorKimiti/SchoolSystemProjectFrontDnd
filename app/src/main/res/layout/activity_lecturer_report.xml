@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    tools:context=".LecturerReportActivity">
+
+    <TextView
+        android:id="@+id/lecturerReportName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compiler Construction" />
+
+    <TextView
+        android:id="@+id/lecturerReportCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lecturerReportName"
+        android:text="Assignment 1" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/lecturerReportCategory"
+        app:dividerColor="#000000"
+        app:dividerInsetEnd="10dp"
+        app:dividerInsetStart="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVLecturerReport2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider"
+        tools:listitem="@layout/report_card" />
+
+</RelativeLayout>
